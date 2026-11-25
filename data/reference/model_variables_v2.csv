@@ -1,0 +1,21 @@
+variable,group,series_id,transform,transformation,imf_variable,why
+us_real_10y,global,FRED.GS10|FRED.CPIAUCSL,real_rate,10-year Treasury yield minus U.S. CPI inflation,"Real 10yr US Yield, level",Global financial conditions; the IMF model's most important variable
+us_real_10y_gap,global,FRED.GS10|FRED.CPIAUCSL,real_rate_hpgap,real 10-year yield minus its one-sided HP trend (lambda 100),"Real 10yr US Yield, gap",Whether global rates are high relative to their recent trend
+us_tbill_gap,global,FRED.TB3MS,hpgap100,3-month Treasury bill rate minus its one-sided HP trend (lambda 100),3mo T-bill Rate HP gap,Short-term global funding conditions relative to trend
+ext_bank_loans_gdp,financial,GFDD.OI.09,level,level,External Bank Liabilities to GDP,Proxy: loans from nonresident banks outstanding (BIS data via World Bank)
+loan_to_deposit,financial,GFDD.SI.04,level,level,Loan to Deposit Ratio,Reliance on non-deposit funding
+capital_adequacy,financial,GFDD.SI.05,level,level,Capital Adequacy Ratio,Loss-absorbing capacity; data start in 1998
+bank_zscore,financial,GFDD.SI.01,level,level,Avg. Bank Prob. Default,Proxy: Z-score (higher = further from default); data start in 2000
+fin_access,financial,FDI.FD_FIA_IX,level,level,Financial Inclusion - Access,IMF Financial Development Index
+fin_efficiency,financial,FDI.FD_FIE_IX,level,level,Financial Inclusion - Efficiency,IMF Financial Development Index
+real_deposit_rate_chg,financial,WDI.FR.INR.DPST|WEO.PCPIPCH,logreal_chg1,1-year change in the real deposit rate (log rates: deposit rate minus inflation),Real Deposit Rate Growth,Funding cost pressure on banks
+bank_credit_gdp,financial-real,WDI.FD.AST.PRVT.GD.ZS,level,level,Credit to GDP,Size of bank lending relative to the economy
+total_debt_chg3,financial-real,GDD.PVD_LS|GDD.CG_DEBT_GDP,sum_chg3,3-year change in private plus central government debt (percent of GDP),Total Debt Growth,Economy-wide leverage build-up
+credit_gap,financial-real,WDI.FD.AST.PRVT.GD.ZS,hpgap1600,bank credit to GDP minus its one-sided HP trend (lambda 1600),BIS Credit Gap,Own calculation with the BIS method so that all countries are covered
+gdp_per_capita_ppp_log,real,WEO.NGDPRPPPPC,log,natural log,Output per Capita (PPP),Level of development
+gdp_growth,real,WEO.NGDP_RPCH,level,level,Real Output Growth,Downturns weaken borrowers and banks
+output_gap,real,WDI.NY.GDP.MKTP.KD.ZG,growth_hpgap100,log real GDP (cumulated growth) minus its one-sided HP trend (lambda 100),HP Output Gap,Overheating
+external_debt_exports,external,WDI.DT.DOD.DECT.GN.ZS|WDI.NE.EXP.GNFS.ZS,ratio_pct,external debt (percent of GNI) divided by exports (percent of GDP),External Debt to Exports,Developing countries only; gaps are filled with the median as in the IMF model
+reserves_gdp,external,WDI.FI.RES.TOTL.CD|WDI.NY.GDP.MKTP.CD,ratio_pct,ratio of the two series (percent),Gross Reserves to GDP,Buffer against outflows
+reserves_months_imports,external,WDI.FI.RES.TOTL.MO,level,level,Gross Reserves to Imports,Buffer against outflows
+debt_service_exports,external,WDI.DT.TDS.DECT.EX.ZS,level,level,Debt Service to CA Credits,Developing countries only

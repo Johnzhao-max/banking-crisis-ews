@@ -1,0 +1,25 @@
+# Which vintage of each raw source the pipeline reads.
+# To move to a newer download, run src/download_data.py and change the value here;
+# the older folder stays on disk, so earlier results can still be reproduced.
+
+[vintages]
+wdi  = "retrieved_2026-11-17"   # World Bank WDI, last updated 2026-11-11
+gdd  = "retrieved_2026-11-17"   # IMF Global Debt Database, Sep 2025 edition
+fred = "retrieved_2026-11-17"
+weo  = "WEOOct2026all.xlsx"     # October 2026 edition
+lv   = "lv2020_imfer_database.xlsx"   # Laeven-Valencia 2020 edition, crises 1970-2017
+wb_financial = "retrieved_2026-11-19"  # World Bank GFDD (last updated 2022-09-23, ends 2021) and one extra WDI series
+imf_fdi      = "retrieved_2026-11-19"  # IMF Financial Development Index via DBnomics (mirrored 2024-06-13, ends 2021)
+
+# Sample and label definitions. Each line is a decision; the reason is in docs/data_dictionary.md.
+[sample]
+first_year          = 1980    # 40 of the 164 crises start in the 1980s; the IMF's model also starts in 1980
+last_predictor_year = 2023    # the target looks 2 years ahead and crisis dates end in 2025
+horizon_years       = 2       # predict a crisis starting in year t+1 or t+2
+countries           = "all_four_sources"   # in WDI, WEO, GDD and the crisis database: 163 countries, no size cut-off
+include_borderline  = true    # the 13 borderline episodes count as crises in the baseline
+crisis_start_source = "table_a1"           # appendix table of Laeven-Valencia (2026), not Table 1 in the text
+max_missing_share   = 0.3333  # a candidate variable is dropped if more than a third of the sample lacks it
+drop_crisis_years   = true    # years from a crisis's start to its end are removed from the sample
+predictor_timing    = "t"     # year-t data predict a crisis starting in t+1 or t+2 (as in the IMF's models)
+max_missing_row     = 0.5     # a country-year is dropped if more than half of its country-level predictors are missing

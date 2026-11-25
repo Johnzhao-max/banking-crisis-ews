@@ -1,0 +1,10 @@
+{
+  "random_forest": {
+    "min_samples_leaf": 20,
+    "max_features": "sqrt"
+  },
+  "xgboost": {
+    "max_depth": 3,
+    "n_estimators": 600
+  }
+}

@@ -1,0 +1,32 @@
+source,key,iso3,note
+LV,Brunei,BRN,World Bank name: Brunei Darussalam
+LV,Cape Verde,CPV,Now Cabo Verde
+LV,Central African Rep.,CAF,
+LV,Central African Rep,CAF,Spelling used in the outcomes sheet
+LV,"China, P.R.",CHN,
+LV,"China, Mainland",CHN,Spelling used in the outcomes sheet
+LV,"China, P.R.: Hong Kong",HKG,
+LV,"Congo, Dem. Rep. of",COD,
+LV,"Congo, Dem Rep",COD,Spelling used in the outcomes sheet
+LV,"Congo, Rep. of",COG,
+LV,"Congo, Rep",COG,Spelling used in the outcomes sheet
+LV,Republic of the Congo,COG,Spelling used in the 2026 paper
+LV,Republic of Congo,COG,Spelling used in the 2026 paper (Table A1)
+LV,Democratic Republic of Congo,COD,Spelling used in the 2026 paper (Table A1)
+LV,Dominican Rep,DOM,Spelling used in the outcomes sheet
+LV,"Iran, I.R. of",IRN,
+LV,Korea,KOR,Republic of Korea (South Korea)
+LV,Kyrgyz Rep,KGZ,Spelling used in the outcomes sheet
+LV,Lao People's Dem. Rep.,LAO,
+LV,Macedonia,MKD,Now North Macedonia
+LV,"Macedonia, FYR",MKD,Spelling used in the outcomes sheet
+LV,Russia,RUS,
+LV,Slovak Rep,SVK,Spelling used in the outcomes sheet
+LV,Swaziland,SWZ,Now Eswatini
+LV,Sao Tome & Principe,STP,Spelling used in the outcomes sheet
+LV,Turkey,TUR,Now Turkiye
+LV,"Yugoslavia, SFR",,Dissolved state with no single successor. It has no banking crisis in the database so it is left unmapped
+WEO,KOS,XKX,Kosovo: WEO uses KOS; World Bank uses XKX
+GDD,UVK,XKX,Kosovo: DataMapper uses UVK; World Bank uses XKX
+WEO,WBG,PSE,West Bank and Gaza: IMF uses WBG; World Bank uses PSE
+GDD,WBG,PSE,West Bank and Gaza: IMF uses WBG; World Bank uses PSE

@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Raw downloads are not committed: they are large and belong to their publishers.
+# data/raw/MANIFEST.csv records where each file came from, and src/download_data.py re-creates them.
+data/raw/*/
+!data/raw/MANIFEST.csv
+
+# Derived data can be rebuilt from the scripts
+data/clean/
+data/model/
+*.duckdb

@@ -1,0 +1,17 @@
+# Data handling
+pandas
+numpy
+pyarrow
+openpyxl
+pypdf
+duckdb
+# Data access
+requests
+wbgapi
+# Modelling
+scikit-learn
+imbalanced-learn
+xgboost
+shap
+# Charts
+matplotlib

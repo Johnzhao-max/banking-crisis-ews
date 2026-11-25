@@ -1,0 +1,21 @@
+variable,label,group,imf_variable,transformation,importance_rank
+us_real_10y,U.S. real 10-year yield,global,"Real 10yr US Yield, level",10-year Treasury yield minus U.S. CPI inflation,1
+us_real_10y_gap,"U.S. real 10-year yield, gap",global,"Real 10yr US Yield, gap",real 10-year yield minus its one-sided HP trend (lambda 100),12
+us_tbill_gap,"U.S. 3-month T-bill rate, gap",global,3mo T-bill Rate HP gap,3-month Treasury bill rate minus its one-sided HP trend (lambda 100),3
+ext_bank_loans_gdp,Loans from foreign banks / GDP,financial,External Bank Liabilities to GDP,level,10
+loan_to_deposit,Loan-to-deposit ratio,financial,Loan to Deposit Ratio,level,2
+capital_adequacy,Capital adequacy ratio,financial,Capital Adequacy Ratio,level,20
+bank_zscore,Bank Z-score,financial,Avg. Bank Prob. Default,level,15
+fin_access,Financial access index,financial,Financial Inclusion - Access,level,11
+fin_efficiency,Financial efficiency index,financial,Financial Inclusion - Efficiency,level,5
+real_deposit_rate_chg,"Real deposit rate, change",financial,Real Deposit Rate Growth,1-year change in the real deposit rate (log rates: deposit rate minus inflation),19
+bank_credit_gdp,Bank credit / GDP,financial-real,Credit to GDP,level,14
+total_debt_chg3,"Total debt / GDP, 3-year change",financial-real,Total Debt Growth,3-year change in private plus central government debt (percent of GDP),18
+credit_gap,Credit gap,financial-real,BIS Credit Gap,bank credit to GDP minus its one-sided HP trend (lambda 1600),13
+gdp_per_capita_ppp_log,"GDP per capita (PPP, log)",real,Output per Capita (PPP),natural log,17
+gdp_growth,Real GDP growth,real,Real Output Growth,level,8
+output_gap,Output gap,real,HP Output Gap,log real GDP (cumulated growth) minus its one-sided HP trend (lambda 100),9
+external_debt_exports,External debt / exports,external,External Debt to Exports,external debt (percent of GNI) divided by exports (percent of GDP),6
+reserves_gdp,Reserves / GDP,external,Gross Reserves to GDP,ratio of the two series (percent),7
+reserves_months_imports,"Reserves, months of imports",external,Gross Reserves to Imports,level,16
+debt_service_exports,Debt service / exports,external,Debt Service to CA Credits,level,4

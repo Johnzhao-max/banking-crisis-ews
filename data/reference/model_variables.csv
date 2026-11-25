@@ -1,0 +1,28 @@
+variable,group,series_id,transform,transformation,why
+bank_credit_gdp,credit,WDI.FD.AST.PRVT.GD.ZS,level,level,Size of bank lending relative to the economy
+bank_credit_gdp_chg3,credit,WDI.FD.AST.PRVT.GD.ZS,chg3,change over 3 years (percentage points),Credit booms precede most banking crises
+private_debt_gdp,credit,GDD.PVD_LS,level,level,Total private debt including bonds; broader than bank credit
+broad_money_gdp,credit,WDI.FM.LBL.BMNY.GD.ZS,level,level,Financial depth
+broad_money_to_reserves,credit,WDI.FM.LBL.BMNY.IR.ZS,level,level,Liabilities that could flee relative to reserves that could cover them
+real_interest_rate,credit,WDI.FR.INR.RINR,level,level,Cost of credit
+gdp_growth,real,WEO.NGDP_RPCH,level,level,Downturns weaken borrowers and bank balance sheets
+gdp_per_capita_log,real,WDI.NY.GDP.PCAP.KD,log,natural log,Level of development
+inflation,real,WEO.PCPIPCH,logpct,log rate: 100 x ln(1 + rate/100),Macroeconomic instability; the log keeps hyperinflations on a comparable scale
+investment_gdp,real,WEO.NID_NGDP,level,level,Investment booms financed by credit
+savings_gdp,real,WEO.NGSD_NGDP,level,level,Domestic funding capacity
+current_account_gdp,external,WEO.BCA_NGDPD,level,level,Reliance on foreign financing
+reserves_months_imports,external,WDI.FI.RES.TOTL.MO,level,level,Buffer against capital outflows
+reserves_gdp,external,WDI.FI.RES.TOTL.CD|WDI.NY.GDP.MKTP.CD,ratio_pct,ratio of the two series (percent),Same buffer measured against GDP; better coverage
+exchange_rate_chg,external,WDI.PA.NUS.FCRF,logchg1,log change over 1 year: 100 x ln(e_t / e_t-1); positive = depreciation,Depreciation raises the burden of foreign-currency debt
+trade_openness,external,WDI.NE.TRD.GNFS.ZS,level,level,Exposure to external shocks
+export_growth,external,WEO.TX_RPCH,level,level,External demand shock
+fdi_gdp,external,WDI.BX.KLT.DINV.WD.GD.ZS,level,level,Stable form of foreign financing
+external_debt_gni,external,WDI.DT.DOD.DECT.GN.ZS,level,level,External indebtedness (developing countries only)
+short_term_debt_to_reserves,external,WDI.DT.DOD.DSTC.IR.ZS,level,level,Rollover risk (developing countries only)
+gov_debt_gdp,fiscal,GDD.CG_DEBT_GDP,level,level,Room for the government to support banks
+fiscal_balance_gdp,fiscal,WEO.GGXCNL_NGDP,level,level,Fiscal position
+us_policy_rate,global,FRED.FEDFUNDS,level,level,Global funding conditions
+us_policy_rate_chg,global,FRED.FEDFUNDS,chg1,change over 1 year (percentage points),Tightening cycles in the United States
+us_real_rate,global,FRED.FEDFUNDS|FRED.CPIAUCSL,real_rate,policy rate minus U.S. CPI inflation,Real global funding cost
+us_credit_spread,global,FRED.BAA10YM,level,level,Global risk appetite; available from 1953 unlike the VIX (1990)
+oil_price_chg,global,FRED.WTISPLC,pct_chg1,percent change over 1 year,Terms-of-trade shock for oil exporters and importers
